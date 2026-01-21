@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/global.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Event-Driven Programming</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="flex flex-row min-h-screen justify-center items-center bg-zinc-800 text-zinc-100">
+    <main class="bg-zinc-100 text-zinc-800 p-4 rounded-2xl w-3/4 md:w-1/2 xl:w-1/4 flex flex-col shadow-2xl">
+        <h1 class="text-4xl mb-4">
+            Sign Up
+        </h1>
+
+        <form id="sign-up-form">
+            <span class="flex flex-row justify-between">
+                <div>
+                    <p>Email</p>
+                    <p id="username-error" class="h-6"></p>
+                </div>
+                <input id="email" type="email" class="border border-black outline-none h-6">
+            </span>
+            
+            <span class="flex flex-row justify-between">
+                <div>
+                    <p>Phone Number</p>
+                    <p id="username-error" class="h-6"></p>
+                </div>
+                <input id="phone-number" type="text" class="border border-black outline-none h-6">
+            </span>
+            
+            <span class="flex flex-row justify-between">
+                <div>
+                    <p>Password</p>
+                    <!--- TODO: Transition height thbx -->
+                    <p id="username-error" class="h-6"></p>
+                </div>
+                <input id="password" type="password" class="border border-black outline-none h-6">
+            </span>
+
+            <span class="flex flex-row justify-between mt-4">
+                <input type="submit"
+                    class="px-4 py-2 bg-zinc-800 text-zinc-100 rounded-2xl hover:scale-110 hover:shadow-2xl transition-all"
+                    value="Submit">
+                <input id="back" type="button"
+                    class="px-4 py-2 bg-zinc-800 text-zinc-100 rounded-2xl hover:scale-110 hover:shadow-2xl transition-all"
+                    value="Back">
+            </span>
+        </form>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
