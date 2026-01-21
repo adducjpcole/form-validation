@@ -1,10 +1,12 @@
-const signInBtn = document.getElementById("sign-in");
-const signUpBtn = document.getElementById("sign-up");
+import { setLocationHref } from '/js/util.js';
 
-signInBtn.addEventListener("click", () => {
-    location.href = "/sign-in/";
+const signInBtn = document.getElementById('sign-in');
+const signUpBtn = document.getElementById('sign-up');
+
+signInBtn.addEventListener('click', () => {
+  setLocationHref('/sign-in/');
 });
 
-signUpBtn.addEventListener("click", () => {
-    location.href = "/sign-up/";
+signUpBtn.addEventListener('click', () => {
+  setLocationHref('/sign-up/');
 });

@@ -4,24 +4,24 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/global.css" />
     <title>Event-Driven Programming</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
 <body class="flex flex-row min-h-screen justify-center items-center bg-zinc-800 text-zinc-100">
-    <main class="bg-zinc-100 text-zinc-800 p-4 w-1/2 md:w-1/3 rounded-2xl shadow-2xl">
-        <h1 class="text-4xl mb-8">
+    <main class="bg-zinc-100 text-zinc-800 p-4 w-3/4 md:w-1/3 xl:w-1/5 rounded shadow-2xl opacity-0 transition-all">
+        <h1 class="text-4xl font-semibold mb-8">
             Welcome!
         </h1>
 
-        <span class="flex flex-row justify-between">
-            <button id="sign-up" class="px-4 py-2 bg-zinc-800 text-zinc-100 rounded-2xl hover:scale-110 hover:shadow-2xl transition-all">Sign Up</button>
-            <button id="sign-in" class="px-4 py-2 bg-zinc-800 text-zinc-100 rounded-2xl hover:scale-110 hover:shadow-2xl transition-all">Sign In</button>
+        <span class="flex flex-row items-stretch gap-2 mx-4">
+            <button id="sign-up" class="flex-1 px-4 py-2 bg-zinc-800 text-zinc-100 rounded hover:scale-110 hover:shadow-2xl transition-all">Sign Up</button>
+            <button id="sign-in" class="flex-1 px-4 py-2 bg-zinc-800 text-zinc-100 rounded hover:scale-110 hover:shadow-2xl transition-all">Sign In</button>
         </span>
     </main>
 
-    <script src="app.js"></script>
+    <script type="module" src="app.js"></script>
 </body>
 
 </html>
